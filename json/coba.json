@@ -1,0 +1,25 @@
+[
+  {
+    "nama": "Futuh Iqram Multazam",
+    "umur": 21,
+    "nim": "2307014",
+    "lulus": true,
+    "hobby": ["coding", "basket"],
+    "namaOrtu": {
+      "papah": "tutu gondewa",
+      "mamah": "pipit pitriani"
+    }
+  },
+
+  {
+    "nama": "Fadilah Fatwa",
+    "umur": 23,
+    "nim": "053709672",
+    "lulus": true,
+    "hobby": ["Make Up", "basket"],
+    "namaOrtu": {
+      "papah": "Ade Ms",
+      "mamah": "Empon Sumiati"
+    }
+  }
+]
