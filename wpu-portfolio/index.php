@@ -3,7 +3,7 @@
 $curl = curl_init();
 
 // Mengambil beberapa hasil channel dengan maxResults lebih dari 1
-curl_setopt($curl, CURLOPT_URL, "https://www.googleapis.com/youtube/v3/search?part=snippet&type=channel&q=sandhikagalih&key=AIzaSyAK3-u4O2SEU89HCs8Rk7bklcSYxd__NkI&maxResults=20");
+curl_setopt($curl, CURLOPT_URL, "https://www.googleapis.com/youtube/v3/search?part=snippet&type=channel&q=rodja&key=AIzaSyAK3-u4O2SEU89HCs8Rk7bklcSYxd__NkI&maxResults=10");
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 
 $result = curl_exec($curl);
@@ -19,6 +19,14 @@ if (isset($result['items'])) {
 } else {
     $items = [];
 }
+
+// ##### Instagram API
+// $clientId = "";
+// $accessToken = "b899a0e4c95834d1010be8798bae549e";
+// $resultIG = get_CURL();
+// $usernameIG = $resultIG["data"]["username"];
+// $profilePictureIG = $resultIG["data"]["profile_picture"];
+// $followersIG = $resultIG["data"]['counts']['followed_by'];
 
 ?>
 
