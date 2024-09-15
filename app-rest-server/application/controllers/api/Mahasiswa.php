@@ -13,7 +13,7 @@ class Mahasiswa extends REST_Controller
     {
         parent::__construct();
         $this->load->model('Mahasiswa_model', 'mhs_model'); // kita dapat ilmu baru di sini, param kedua itu berfungsi untuk alias, tapi peringatan di sini ketika kita sudah membuat alias tidak bisa lagi menggunakan nama asli nya, nama asli nya itu yang mana?, yang ini 'Mahasiswa_model'
-        $this->methods['index_get']['limit'] = 10;
+        $this->methods['index_get']['limit'] = 1000;
     }
 
 
@@ -76,7 +76,7 @@ class Mahasiswa extends REST_Controller
     {
         $data = [
             'nama' => $this->post('nama'),
-            'nrp' => $this->post('nrp'),
+            'nim' => $this->post('nim'),
             'email' => $this->post('email'),
             'jurusan' => $this->post('jurusan')
         ];
@@ -96,13 +96,12 @@ class Mahasiswa extends REST_Controller
     }
 
 
-
     public function index_put()
     {
         $id = $this->put('id');
         $data = [
             'nama' => $this->put('nama'),
-            'nrp' => $this->put('nrp'),
+            'nim' => $this->put('nim'),
             'email' => $this->put('email'),
             'jurusan' => $this->put('jurusan')
         ];
